@@ -1,0 +1,5 @@
+{
+  "name": "智租云 (SmartLease AI)",
+  "description": "基于 Gemini 2.5 的智能融资租赁合同生成系统。支持直租、回租等多种业务模式，自动生成合规合同并提供条款优化深度解析。",
+  "requestFramePermissions": []
+}
