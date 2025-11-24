@@ -86,7 +86,7 @@ const InputForm: React.FC<InputFormProps> = ({ onSubmit, isLoading }) => {
                     className={`flex flex-col items-center justify-center p-4 rounded-xl border-2 transition-all ${formData.leaseType === LeaseType.DirectLease ? 'border-indigo-600 bg-indigo-50 text-indigo-700' : 'border-slate-200 hover:border-slate-300 text-slate-500'}`}
                 >
                     <span className="font-semibold text-lg">直接租赁</span>
-                    <span className="text-xs mt-1 opacity-75">购进设备 -> 出租</span>
+                    <span className="text-xs mt-1 opacity-75">购进设备 &rarr; 出租</span>
                 </button>
                 <button
                     type="button"
@@ -94,7 +94,7 @@ const InputForm: React.FC<InputFormProps> = ({ onSubmit, isLoading }) => {
                     className={`flex flex-col items-center justify-center p-4 rounded-xl border-2 transition-all ${formData.leaseType === LeaseType.SaleLeaseback ? 'border-indigo-600 bg-indigo-50 text-indigo-700' : 'border-slate-200 hover:border-slate-300 text-slate-500'}`}
                 >
                     <span className="font-semibold text-lg">售后回租</span>
-                    <span className="text-xs mt-1 opacity-75">买入资产 -> 回租</span>
+                    <span className="text-xs mt-1 opacity-75">买入资产 &rarr; 回租</span>
                 </button>
             </div>
         </div>
