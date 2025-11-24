@@ -1,11 +1,9 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import { LeaseFormData, GeneratedContractResponse } from "../types";
 
-// Initialize the client
-// The API key must be available in the environment variable API_KEY
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-
 export const generateLeaseContract = async (data: LeaseFormData): Promise<GeneratedContractResponse> => {
+  // Initialize the client inside the function to avoid top-level crashes if process.env is undefined at load time
+  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
   const modelId = "gemini-2.5-flash";
 
   const prompt = `
